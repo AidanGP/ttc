@@ -3,6 +3,10 @@ import { Heading, VStack, Text, Box, HStack, Button, Image, Link, Stack } from '
 import L from '../images/samples/15.png'
 import R from '../images/samples/2.png'
 
+
+import charity_1 from '../images/charity1.png'
+import charity_2 from '../images/charity2.png'
+
 function Welcome() {
     return (
         <>
@@ -15,35 +19,36 @@ function Welcome() {
                         </Box>
                         <Text align="center" w={["80%", "75%", "70%", "70%"]} fontSize={24}>Join  the  Trippiest  Turtles  in  the  NFT  space! We’re  a close-knit  community  of  10,000 tripped-out turtles stored  as  ERC-721  tokens  on the Ethereum compatible  Polygon  network.</Text>
 
-                        <Stack direction={["column", "column", "row", "row"]} spacing={8}>
-                            {/* <Link target="_blank" rel="noopener noreferrer" href="https://discord.com/invite/TrippyTurtlesClub" _hover={{}}>
-                                <Button variant='solid' p={6} leftIcon={<FaDiscord />} borderRadius={80} bgColor="accent" color="black" borderColor="accent" borderWidth="2px" _focus={{ outline: 0 }} _hover={{ bgColor: "transparent", color: "white" }}>Join Now</Button>
-                            </Link>
-                            <Link target="_blank" rel="noopener noreferrer" href="https://twitter.com/_trippyturtles_" _hover={{}}>
-                                <Button variant='solid' p={6} leftIcon={<FaTwitter />} borderRadius={80} bgColor="accent" color="black" borderColor="accent" borderWidth="2px" _focus={{ outline: 0 }} _hover={{ bgColor: "transparent", color: "white" }}>Follow Us</Button>
-                            </Link> */}
-                            <Link target="_blank" rel="noopener noreferrer" href="https://mint.trippyturtlesclub.com/" _hover={{ textDecoration: 'none' }}>
-                                <Button
-                                    variant='solid'
-                                    p={10}
-                                    // rightIcon={<FaArrowRight />}
-                                    borderRadius={80}
-                                    bgColor="accent"
-                                    fontSize='32'
-                                    color="black"
-                                    borderColor="accent"
-                                    borderWidth="2px"
-                                    _focus={{ outline: 0 }}
-                                    _hover={{ bgColor: "transparent", color: "white", transform: "rotate(-3deg)" }}
-                                >
-                                    Mint Now
-                                </Button>
-                            </Link>
-                        </Stack>
+                        <Link target="_blank" rel="noopener noreferrer" href="https://mint.trippyturtlesclub.com/" _hover={{ textDecoration: 'none' }}>
+                            <Button
+                                variant='solid'
+                                p={10}
+                                // rightIcon={<FaArrowRight />}
+                                borderRadius={80}
+                                bgColor="accent"
+                                fontSize='32'
+                                color="black"
+                                borderColor="accent"
+                                borderWidth="2px"
+                                _focus={{ outline: 0 }}
+                                _hover={{ bgColor: "transparent", color: "white", transform: "rotate(-3deg)" }}
+                            >
+                                Mint Now
+                            </Button>
+                        </Link>
                     </VStack>
+
                     <Image src={R} w={[0, 0, 0, 48, 80]} display={["none", "none", "none", "block"]} rounded="100%" />
                 </HStack>
-            </Box >
+
+                <VStack align='center'>
+                    <Heading color="accent" size="lg" pt={32} pb={8}>Official Charity Partners</Heading>
+                    <Stack align='center' direction={['column', 'row', 'row', 'row']} spacing={8}>
+                        <Image src={charity_1} maxW={32} />
+                        <Image src={charity_2} maxH={32} />
+                    </Stack>
+                </VStack>
+            </Box>
         </>
     )
 }
