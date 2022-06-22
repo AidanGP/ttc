@@ -32,7 +32,7 @@ function SeenOn() {
                 <Center>
                     <SimpleGrid spacing="6vw" columns={["1", "1", "2", "2"]} rowGap={8}>
                         <Here name="NFTCalendar.io" src={a} url='https://nftcalendar.io/event/trippy-turtles-club/' />
-                        <Here name="NFTPilot.io" src={'https://nftpilot-12f9a.kxcdn.com/wp-content/uploads/2022/01/Nftpilot_logo_300x300_w_text.png'} url='https://www.nftpilot.io/nft-project/trippy-turtles-club/' />
+                        <Here name="NFTPilot.io" src={'https://www.nftpilot.io/wp-content/uploads/2022/01/Nftpilot_logo_300x300_w_text.png'} url='https://www.nftpilot.io/nft-project/trippy-turtles-club/' />
                     </SimpleGrid>
                 </Center>
             </Box>
